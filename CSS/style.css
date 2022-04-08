@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+html, body{
+
+    height:  100%;
+    
+}
+
+body {
+
+    font-size: 1.6rem;
+}
+
+.cabecalho {
+
+    background: linear-gradient(90deg, #20011f, #690728);
+    position: fixed;
+    width: 100%;
+}
+
+.cabecalho .container {
+
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.nav .lista-items{
+
+    display: flex;
+}
+
+.nav .lista-items .itemLI{
+
+    list-style: none;
+}
+
+.nav .lista-items .itemLI .item{
+
+    text-decoration: none;
+    color: #F8F9F7;
+    font-size: 2.1rem;
+    padding: 6px 10px;
+    margin-left: 48px;
+    font-family: poppins;
+}
+
+.nav .lista-items .itemLI .item:hover{
+
+    background-color: #4c4e4a27;
+    transition: 0.5s;
+}
+
+.logo h1{
+
+    font-family: noto sans;
+    color: #F8F9F7;
+}
+
+@media(max-width: 965px) {
+
+    html {
+
+        font-size: 50%;
+    }
+
+}
+
+@media(max-width: 810px) {
+
+    html {
+
+        font-size: 40%;
+    }
+
+}
+
+@media(max-width: 710px) {
+
+    .nav {
+
+        display: none;
+    }
+
+    .item-1 {
+
+        background-color: #F8F9F7;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration:  0.3s;
+    }
+    .item-2 {
+
+        background-color: #F8F9F7;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration:  0.3s;
+    }
+    .item-3 {
+
+        background-color: #F8F9F7;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration:  0.3s;
+    }
+
+    .menu-hamburger {
+
+        width: 40px;
+        height: 30px;
+    }
+
+    .menu-section.on {
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background: linear-gradient(150deg, #20011f, #690728);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-section.on .nav {
+
+        display: block;
+    }
+
+    .menu-section.on .menu-hamburger {
+
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .menu-section.on .menu-hamburger .item-1 {
+
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-hamburger .item-2 {
+
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-hamburger .item-3 {
+
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on .nav .lista-items {
+
+        display: block;
+        align-items: center;
+    }
+
+    .menu-section.on .nav .lista-items .itemLI .item{
+
+        transition-duration: 0.3s;
+        font-size: 5rem;
+        line-height: 15rem;
+        margin-left: 0;
+    }
+}
+.sobre {
+
+    padding-bottom: 100px;
+}
+.extra {
+
+    padding-top: 100px;
+    width: 1310px;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+.img-home {
+
+    width: 1000px;
+    height: 500px;
+    padding-left: 200px;
+}
+
+.center {
+
+    padding-left: 50px;
+    margin-top: -350px;
+}
+
+.texto-sobre-h1 {
+
+    color: #a80c40;;
+    font-size: 3.7rem;
+    font-style: italic;
+    font-family: noto sans;  
+}
+
+.texto-sobre-p {
+
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: poppins;
+}
+
+.texto-h1 {
+
+    color: #a80c40;;
+    font-size: 3.7rem;
+    font-style: italic;
+    font-family: noto sans; 
+}
+
+.texto-p {
+
+    margin: 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: poppins;
+}
+
+.novas-tecnologias {
+
+    padding-left: 50px;
+}
+
+.exemplos {
+
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 1000px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.texto-h2 {
+
+    color: #a80c40;;
+    font-size: 3.7rem;
+    font-style: italic;
+    font-family: noto sans; 
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.sidebar > div {
+
+    margin-bottom: 10px;
+}
+
+.nova-tecnologia-img {
+
+    width: 700px;
+    height: 500px;
+}
+
+.img {
+
+    width: 150px;
+    height: 150px;
+}
+.startup {
+
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.img-startup {
+
+    width: 700px;
+    height: 400px;
+    padding-right: 100px;
+}
+
+.center-2 {
+
+    margin-top: -350px;
+}
+
+.sidebar-2 {
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.E-commerce {
+
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+.rodapé {
+
+    background: linear-gradient(90deg, #20011f, #690728);
+    width: 100%;
+}
+
+.copyright {
+
+    color: #F8F9F7;
+    font-size: 2rem;
+
+}
